@@ -1,0 +1,9 @@
+#Change cell color in two options, with double-click and right-click
+Private Sub Worksheet_BeforeDoubleClick(ByVal Target As Range, Cancel As Boolean)
+    Cancel = True
+    Target.Interior.Color = vbRed
+End Sub
+Private Sub Worksheet_BeforeRightClick(ByVal Target As Range, Cancel As Boolean)
+    Cancel = True
+    Target.Interior.Color = vbGreen
+End Sub
