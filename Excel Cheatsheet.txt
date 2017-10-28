@@ -7,3 +7,14 @@ Private Sub Worksheet_BeforeRightClick(ByVal Target As Range, Cancel As Boolean)
     Cancel = True
     Target.Interior.Color = vbGreen
 End Sub
+
+#Adding Serial Numbers
+Sub AddSerialNumbers()
+Dim i As Integer
+On Error GoTo Last
+i = InputBox("Enter Value", "Enter Serial Numbers")
+For i = 1 To iActiveCell.Value = i
+ActiveCell.Offset(1, 0).Activate
+Next i
+Last:Exit Sub
+End Sub
