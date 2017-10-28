@@ -1,4 +1,4 @@
-#Change cell color in two options, with double-click and right-click
+#Change cell color in two options using double-click and right-click
 Private Sub Worksheet_BeforeDoubleClick(ByVal Target As Range, Cancel As Boolean)
     Cancel = True
     Target.Interior.Color = vbRed
@@ -17,4 +17,12 @@ For i = 1 To iActiveCell.Value = i
 ActiveCell.Offset(1, 0).Activate
 Next i
 Last:Exit Sub
+End Sub
+
+#Close all workbooks at once
+Sub CloseAllWorkbooks()
+Dim wbs As Workbook
+For Each wbs In Workbooks
+wbs.Close SaveChanges:=True
+Next wb
 End Sub
