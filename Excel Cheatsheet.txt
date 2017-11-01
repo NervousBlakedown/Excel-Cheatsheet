@@ -38,3 +38,8 @@ Else
 End If
 Next rng
 End Sub
+
+#Open calculator
+Sub OpenCalculator()
+Application.ActivateMicrosoftApp Index:=0
+End Sub
