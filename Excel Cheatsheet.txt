@@ -53,3 +53,9 @@ ActiveCell.NumberFormat = "[$-409]h:mm AM/PM;@"
 ActiveCell.Offset(RowOffset:=1, ColumnOffset:=0).Select
 Next i
 End Sub
+
+#Highlight cells with comments
+Sub highlightCommentCells()
+Selection.SpecialCells(xlCellTypeComments).Select
+Selection.Style = "Note"
+End Sub
