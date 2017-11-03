@@ -1,2 +1,2 @@
 # Excel-Cheatsheet
-A cheatsheet with VBA/Macros and other Excel shortcuts you need.
+A cheatsheet with VBA macros and other Excel shortcuts you need.
