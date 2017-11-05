@@ -71,3 +71,13 @@ End If
 End If
 Next
 End Sub
+
+#Protect all Workbooks instantly
+Sub ProtecAllWorskeets()
+Dim ws As Worksheet
+Dim ps As String
+ps = InputBox("Enter a Password.", vbOKCancel)
+For Each ws In ActiveWorkbook.Worksheets
+ws.Protect Password:=ps
+Next ws
+End Sub
