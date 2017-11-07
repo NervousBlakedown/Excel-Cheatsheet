@@ -81,3 +81,15 @@ For Each ws In ActiveWorkbook.Worksheets
 ws.Protect Password:=ps
 Next ws
 End Sub
+
+#Refresh all pivot tables
+Sub RefreshAllPivotTables()
+Dim ws As Worksheet
+Dim pt As PivotTable
+For Each ws In
+For Each ws In ThisWorkbook.Worksheets
+For Each pt In ws.PivotTables
+pt.RefreshTable
+Next pt
+Next ws
+End Sub
