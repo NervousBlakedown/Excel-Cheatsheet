@@ -105,3 +105,14 @@ Else
 End If
 Next rng
 End Sub
+
+#Show progress on status bar
+Sub progressStatusBar()
+Application.StatusBar = "Start Printing the Numbers"
+For icntr = 1 To 5000
+Cells(icntr, 1) = icntr
+Application.StatusBar = " Please wait while printing the numbers "
+& Round((icntr / 5000 * 100), 0) & "%"
+Next
+Application.StatusBar = ""
+End Sub
