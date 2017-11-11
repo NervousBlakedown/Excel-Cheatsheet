@@ -116,3 +116,14 @@ Application.StatusBar = " Please wait while printing the numbers "
 Next
 Application.StatusBar = ""
 End Sub
+
+#Calculate cube root
+Sub getCubeRoot()
+Dim rng As Range
+Dim i As Integer
+For Each rng In Selection
+If rng.Value = rng ^ (1 / 3)
+Else
+End If
+Next rng
+End Sub
