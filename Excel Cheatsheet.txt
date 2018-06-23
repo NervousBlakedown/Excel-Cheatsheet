@@ -173,3 +173,6 @@ Next
 End With
 Next I
 End Sub
+
+# SUMIF formula
+    =SUMIF(C5:C11,"*"&F6&"*",D5:D11)
